@@ -1,0 +1,61 @@
+{
+  "name": "ai-rate-limiter",
+  "version": "0.1.0",
+  "description": "Universal, drop-in rate limiter, quota manager, and cost tracker for any LLM API — OpenAI, Claude, Gemini, Mistral, and more.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "arl": "./dist/cli.js",
+    "ai-rate-limiter": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test test/*.test.ts",
+    "report:demo": "node --import tsx src/cli.ts simulate",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "llm", "rate-limiter", "rate-limit", "cost", "cost-tracking", "budget",
+    "quota", "openai", "anthropic", "claude", "gemini", "mistral", "finops",
+    "tokens", "observability", "ai", "gpt", "guardrail", "spend"
+  ],
+  "author": "Ingrid Toulotte <ingridtoulotte@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingridtoulotte/ai-rate-limiter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ingridtoulotte/ai-rate-limiter/issues"
+  },
+  "homepage": "https://github.com/ingridtoulotte/ai-rate-limiter#readme",
+  "engines": {
+    "node": ">=18.19"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0"
+  },
+  "peerDependencies": {
+    "ioredis": "^5"
+  },
+  "peerDependenciesMeta": {
+    "ioredis": {
+      "optional": true
+    }
+  }
+}

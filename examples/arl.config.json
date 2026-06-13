@@ -1,0 +1,16 @@
+{
+  "mode": "enforce",
+  "failMode": "open",
+  "policy": {
+    "defaultMaxOutputTokens": 800,
+    "limits": [
+      { "name": "org-monthly-budget",  "scope": "org",    "metric": "cost",     "limit": 2000, "window": "month", "warnAt": [0.8, 0.95] },
+      { "name": "user-monthly-budget", "scope": "user",   "metric": "cost",     "limit": 50,   "window": "month", "warnAt": [0.8] },
+      { "name": "global-daily-budget", "scope": "global", "metric": "cost",     "limit": 300,  "window": "day",   "warnAt": [0.8] },
+      { "name": "user-rpm",            "scope": "user",   "metric": "requests", "limit": 60,   "window": "minute" },
+      { "name": "user-tpm",            "scope": "user",   "metric": "tokens",   "limit": 200000, "window": "minute" },
+      { "name": "opus-guardrail",      "scope": "user",   "metric": "cost",     "limit": 10,   "window": "day", "match": { "model": "claude-opus-4" } }
+    ]
+  },
+  "alerts": { "console": true }
+}
