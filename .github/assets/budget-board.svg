@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="792" viewBox="0 0 680 792" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">
+  <defs>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c83ff"/>
+      <stop offset="1" stop-color="#39c5cf"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="680" height="792" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="1.5" y="1.5" width="677" height="40" rx="12" fill="#161b22"/>
+  <rect x="1.5" y="28" width="677" height="14" fill="#161b22"/>
+  <circle cx="24" cy="21" r="6" fill="#f85149"/>
+  <circle cx="44" cy="21" r="6" fill="#d29922"/>
+  <circle cx="64" cy="21" r="6" fill="#3fb950"/>
+  <text x="340" y="26" text-anchor="middle" fill="#7d8590" font-size="13.5">arl simulate — live budget board</text>
+
+  <g xml:space="preserve">
+    <text x="22" y="68"  fill="#484f58">────────────────────────────────────────────────────────</text>
+    <text x="22" y="89"  fill="#e6edf3" font-weight="bold">  ai-rate-limiter <tspan fill="#484f58">·  Budget Status</tspan><tspan fill="#7d8590">        2026-06-14 UTC</tspan></text>
+    <text x="22" y="110" fill="#484f58">────────────────────────────────────────────────────────</text>
+
+    <text x="22" y="148" fill="#39c5cf" font-weight="bold">  BUDGETS</text>
+    <text x="22" y="169" fill="#e6edf3">  org-monthly-budget <tspan fill="#7d8590">org=acme / month</tspan></text>
+    <text x="22" y="190" fill="#d29922">    ███████████████████<tspan fill="#30363d">░░░</tspan><tspan fill="#e6edf3">  85%  $169.73 / $200.00</tspan>  ⚠</text>
+    <text x="22" y="211" fill="#e6edf3">  user-monthly-budget <tspan fill="#7d8590">user=alice / month</tspan></text>
+    <text x="22" y="232" fill="#d29922">    ███████████████████<tspan fill="#30363d">░░░</tspan><tspan fill="#e6edf3">  84%  $101.03 / $120.00</tspan>  ⚠</text>
+    <text x="22" y="253" fill="#e6edf3">  global-daily-budget <tspan fill="#7d8590">global=global / day</tspan></text>
+    <text x="22" y="274" fill="#f85149">    ████████████████████<tspan fill="#30363d">░░</tspan><tspan fill="#e6edf3">  92%  $11.95 / $13.00</tspan>  ⚠</text>
+
+    <text x="22" y="312" fill="#39c5cf" font-weight="bold">  SPEND (last 24h)</text>
+    <text x="22" y="333" fill="#7d8590">    requests <tspan fill="#e6edf3" font-weight="bold">1.6K</tspan>   tokens <tspan fill="#e6edf3" font-weight="bold">3.7M</tspan> in / <tspan fill="#e6edf3" font-weight="bold">1.1M</tspan> out</text>
+    <text x="22" y="354" fill="#7d8590">    est cost <tspan fill="#e6edf3" font-weight="bold">$13.14</tspan>   <tspan fill="#7d8590">projected month ≈ $394.10</tspan></text>
+
+    <text x="22" y="392" fill="#39c5cf" font-weight="bold">  TOP SPENDERS (month-to-date)</text>
+    <text x="22" y="413" fill="#e6edf3"><tspan fill="#7d8590">    1.</tspan> alice            $101.03  <tspan fill="#f85149">██████████████</tspan></text>
+    <text x="22" y="434" fill="#e6edf3"><tspan fill="#7d8590">    2.</tspan> bob               $42.83  <tspan fill="#3fb950">██████</tspan><tspan fill="#30363d">░░░░░░░░</tspan></text>
+    <text x="22" y="455" fill="#e6edf3"><tspan fill="#7d8590">    3.</tspan> carol             $19.55  <tspan fill="#3fb950">███</tspan><tspan fill="#30363d">░░░░░░░░░░░</tspan></text>
+    <text x="22" y="476" fill="#e6edf3"><tspan fill="#7d8590">    4.</tspan> dave               $6.31  <tspan fill="#3fb950">█</tspan><tspan fill="#30363d">░░░░░░░░░░░░░</tspan></text>
+
+    <text x="22" y="514" fill="#39c5cf" font-weight="bold">  MODEL BREAKDOWN (month-to-date)</text>
+    <text x="22" y="535" fill="#e6edf3">    claude-sonnet-4         $87.53   <tspan fill="#7d8590">52%  15.3M tok</tspan></text>
+    <text x="22" y="556" fill="#e6edf3">    gpt-4o                  $66.01   <tspan fill="#7d8590">39%  15.7M tok</tspan></text>
+    <text x="22" y="577" fill="#e6edf3">    gemini-2.5-flash        $12.31    <tspan fill="#7d8590">7%  15.3M tok</tspan></text>
+    <text x="22" y="598" fill="#e6edf3">    gpt-4o-mini              $3.89    <tspan fill="#7d8590">2%  15.3M tok</tspan></text>
+
+    <text x="22" y="636" fill="#39c5cf" font-weight="bold">  ROUTE BREAKDOWN (month-to-date)</text>
+    <text x="22" y="657" fill="#e6edf3">    /v1/embed                   <tspan fill="#3fb950">$43.03</tspan></text>
+    <text x="22" y="678" fill="#e6edf3">    /v1/agent                   <tspan fill="#3fb950">$42.32</tspan></text>
+    <text x="22" y="699" fill="#e6edf3">    /v1/summarize               <tspan fill="#3fb950">$42.31</tspan></text>
+    <text x="22" y="720" fill="#e6edf3">    /v1/chat                    <tspan fill="#3fb950">$42.07</tspan></text>
+    <text x="22" y="752" fill="#484f58">────────────────────────────────────────────────────────</text>
+  </g>
+</svg>
